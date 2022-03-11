@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+}
+
+.bg-top {
+  position: absolute;
+  top: -500px;
+  left: -200px;
+  z-index: 1;
+}
+.pos-btm {
+  position: fixed;
+}
+.bg-btm {
+  position: absolute;
+  float: right;
+  z-index: 1;
+}
+
+.flex1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex1 h2,
+p {
+  text-align: center;
+}
+
+.flex p {
+  color: hsl(0, 0%, 59%);
+  padding: 5px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.attribution {
+  margin: 30px 0 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 10px 20px;
+}
+
+.card {
+  background-color: white;
+  width: 350px;
+  height: 370px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  z-index: 2;
+  box-shadow: 5px 5px 20px 1px #3b3b3b5e;
+}
+
+.name h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-weight: 400;
+}
+
+.card-bg {
+  background-image: url("assets\bg-pattern-card.svg");
+  width: 300px;
+  border-radius: 10%;
+}
+
+.bg {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.img {
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.img-box {
+  position: relative;
+  top: -60px;
+  left: 125px;
+  width: 100px;
+  margin: 0 0 -40px;
+}
+
+.section {
+  position: relative;
+}
+
+.loc {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.loc p {
+  font-size: 14px;
+  padding: 10px 0 25px;
+  color: hsl(0, 0%, 59%);
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.name p {
+  font-size: 18px;
+  padding: 0 10px 0;
+  color: hsl(0, 0%, 51%);
+}
+
+@media only screen and (max-width: 800px) {
+  .bg-top {
+    position: absolute;
+    overflow: auto;
+    left: -800px;
+  }
+
+  .bg-btm {
+    left: -50px;
+  }
+}
